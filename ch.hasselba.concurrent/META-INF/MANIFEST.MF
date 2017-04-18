@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Concurrent
+Bundle-SymbolicName: ch.hasselba.concurrent.plugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: ch.hasselba.concurrent,
+ ch.hasselba.concurrent.intf,
+ ch.hasselba.concurrent.pool,
+ ch.hasselba.concurrent.queue,
+ ch.hasselba.concurrent.thread,
+ ch.hasselba.domino,
+ ch.hasselba.service
+Bundle-Vendor: Sven Hasselbach
+Bundle-Activator: ch.hasselba.plugin.Activator
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.osgi;bundle-version="3.4.3"
+Bundle-ClassPath: .
