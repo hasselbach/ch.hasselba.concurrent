@@ -1,15 +1,19 @@
 package ch.hasselba.service;
 
+/**
+ * ServiceFactory 
+ * A Factory pattern for the ServiceLocator
+ * 
+ * @author Sven Hasselbach
+ */
 public class ServiceFactory {
 
-	// ***************************************************************************
-	// ** Attributes
-	// ***************************************************************************
-
-	/** Singleton instance. */
 	private static ServiceFactory instance;
-
-	// Singleton
+	protected static IServiceLocator serviceLocator;
+	
+	/**
+	 * Static initalization
+	 */
 	static {
 		synchronized (ServiceFactory.class) {
 			if (instance == null) {
@@ -18,22 +22,22 @@ public class ServiceFactory {
 			}
 		}
 	}
-
-	protected static IServiceLocator serviceLocator;
-
-	// ***************************************************************************
-	// ** Singleton-Access
-	// ***************************************************************************
-
 	/**
-	 * Instance Getter for Singleton
+	 * gets the instance of the factory
 	 * 
 	 * @return
+	 * 	ServiceFactory instance
 	 */
 	static public ServiceFactory getInstance() {
 		return instance;
 	}
 
+	/**
+	 * gets the service locator
+	 * 
+	 * @return
+	 * 	a service locator
+	 */
 	public IServiceLocator getServiceLocator() {
 		return serviceLocator;
 	}

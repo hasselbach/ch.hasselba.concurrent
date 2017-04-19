@@ -39,12 +39,13 @@ public class NotesThreadPool {
 	}
 
 	/**
-	 * NotesThreadPool ohne ThreadFactory
+	 * NotesThreadPool without ThreadFactory
 	 * 
-	 * Ist fÃ¼r Aufrufe aus Lotus Notes Agents heraus gedacht, da sich die Agent
+	 * Ist für Aufrufe aus Lotus Notes Agents heraus gedacht, da sich die Agent
 	 * Threads sonst *verhaken* und die Agenten nie beendet werden.
 	 * 
 	 * @param nThreads
+	 * 	
 	 * @param maxThreads
 	 * @param name
 	 */

@@ -37,39 +37,4 @@ public class NotesThreadPoolExecutor extends ThreadPoolExecutor {
 		super(nThreads, maxThreads, keepAliveTime, timeUnit, queue);
 	}
 
-	@Override
-	public void execute(Runnable command) {
-		super.execute(command);
-	}
-
-	@Override
-	public void shutdown() {
-		super.shutdown();
-	}
-
-	@Override
-	public List<Runnable> shutdownNow() {
-		return super.shutdownNow();
-	}
-
-	@Override
-	protected void finalize() {
-		super.finalize();
-	}
-
-	@Override
-	public long getCompletedTaskCount() {
-		return super.getCompletedTaskCount();
-	}
-
-	@Override
-	protected void beforeExecute(Thread t, Runnable r) {
-		super.beforeExecute(t, r);
-	}
-
-	@Override
-	protected void afterExecute(Runnable r, Throwable t) {
-		super.afterExecute(r, t);
-	}
-
 }

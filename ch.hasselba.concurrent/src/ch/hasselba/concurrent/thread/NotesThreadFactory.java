@@ -2,6 +2,12 @@ package ch.hasselba.concurrent.thread;
 
 import java.util.concurrent.ThreadFactory;
 
+/**
+ * A thread factory for NotesThreads
+ * Creates new worker threads
+ *  
+ * @author Sven Hasselbach
+ */
 public class NotesThreadFactory implements ThreadFactory {
 
 	private String threadName;

@@ -2,6 +2,11 @@ package ch.hasselba.service;
 
 import ch.hasselba.concurrent.pool.NotesThreadPool;
 
+/**
+ * A ServiceLocator implementation for NotesThreadPool
+ * 
+ * @author Sven Hasselbach
+ */
 public class ServiceLocator implements IServiceLocator {
 
 	protected NotesThreadPool notesThreadPool;
